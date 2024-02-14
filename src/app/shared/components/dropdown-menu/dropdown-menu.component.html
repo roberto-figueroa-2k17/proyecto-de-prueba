@@ -1,0 +1,17 @@
+<nav class="nav-bar">
+    <ng-container *ngFor="let item of menuItems">
+        <div class="dropdown">
+            <a [routerLink]="item.serviceUrl" class="nav-link dropdown-toggle" [class.has-submenu]="item.submenus && item.submenus.length">
+                <ng-container *ngIf="item.serviceName === 'Inicio' && item.serviceUrl === 'home'">
+                    <mat-icon class="nav-icon">home</mat-icon>
+                </ng-container>
+                {{item.serviceName}}
+            </a>
+            <div *ngIf="item.submenus && item.submenus.length" class="dropdown-menu">
+                <a *ngFor="let subItem of item.submenus" class="dropdown-item" [routerLink]="subItem.serviceUrl">
+                    {{subItem.serviceName}}
+                </a>
+            </div>
+        </div>
+    </ng-container>
+</nav>

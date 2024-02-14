@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #0f253a;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.536rem 0;
+}
+
+.logo {
+    width: 9.375rem;
+    height: 2rem;
+    margin-left: 3.25rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 4.688rem;
+}
+
+.user-name {
+    color: #ffffff;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.logout {
+    color: #ffffff;
+    font-size: 0.75rem;
+    text-decoration: none;
+}

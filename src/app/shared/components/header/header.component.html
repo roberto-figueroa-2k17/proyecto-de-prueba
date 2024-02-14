@@ -1,0 +1,12 @@
+<header>
+    <div class="top-bar">
+        <img class="logo" src="../../../../assets/images/header/cometa-logo.png" alt="Cometa Logo">
+        <div class="user-info">
+            <span class="user-name">{{userName}}</span>
+            <a class="logout" href="#" (click)="logout($event);">Cerrar Sesión</a>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <app-dropdown-menu [menuItems]="accessTo"></app-dropdown-menu>
+    </nav>
+</header>
